@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Memory Game</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="header">
+            <span id="overlay" >
+                <div id="win">You win!!!!!!!!<br/>
+                <button onclick="newGame()">New Game</button></div>
+                </span>
+                <span id="counter"></span>    
+            <span style="padding:20px">
+              <button onclick="newGame()">New Game</button>
+            </span>
+           
+            <span id="wrong"></span>
+
+    </div>
+    <section class="memory-game">
+        <div class="memory-card" data-framework="marge">
+            <img class="front-face" src="img/marge.png" />
+            <img class="back-face" src="img/simpsons.jpg" />
+        </div>
+        <div class="memory-card" data-framework="marge">
+            <img class="front-face" src="img/marge.png" />
+            <img class="back-face" src="img/simpsons.jpg" />
+        </div>
+        <div class="memory-card" data-framework="homer">
+            <img class="front-face" src="img/homer.png" />
+            <img class="back-face" src="img/simpsons.jpg" />
+        </div>
+        <div class="memory-card" data-framework="homer">
+            <img class="front-face" src="img/homer.png" />
+            <img class="back-face" src="img/simpsons.jpg" />
+        </div>
+        <div class="memory-card" data-framework="bart">
+            <img class="front-face" src="img/bart.png" />
+            <img class="back-face" src="img/simpsons.jpg" />
+        </div>
+        <div class="memory-card" data-framework="bart">
+            <img class="front-face" src="img/bart.png" />
+            <img class="back-face" src="img/simpsons.jpg" />
+        </div>
+        <div class="memory-card" data-framework="lisa">
+            <img class="front-face" src="img/lisa.png" />
+            <img class="back-face" src="img/simpsons.jpg" />
+        </div>
+        <div class="memory-card" data-framework="lisa">
+            <img class="front-face" src="img/lisa.png" />
+            <img class="back-face" src="img/simpsons.jpg" />
+        </div>
+        <div class="memory-card" data-framework="maggie"> 
+            <img class="front-face" src="img/maggie.png" />
+            <img class="back-face" src="img/simpsons.jpg"/>
+        </div>
+        <div class="memory-card" data-framework="maggie">
+            <img class="front-face" src="img/maggie.png" />
+            <img class="back-face" src="img/simpsons.jpg" />
+        </div>
+        <div class="memory-card" data-framework="grandpa">
+            <img class="front-face" src="img/grandpa.png" />
+            <img class="back-face" src="img/simpsons.jpg" />
+        </div>
+        <div class="memory-card" data-framework="grandpa">
+            <img class="front-face" src="img/grandpa.png" />
+            <img class="back-face" src="img/simpsons.jpg" />
+        </div>
+    </section>
+
+ 
+
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>

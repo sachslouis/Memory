@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    height: 100vh;
+    display: flex;
+    background: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#header{
+    width: 100%;
+    height: 50px;
+    background: deeppink;
+    text-align: center;
+    position: absolute;
+}
+
+.memory-game{
+    height: 640px;
+    width: 640px;
+    display: flex;
+    margin: auto;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    perspective: 1000px;
+}
+
+.memory-card{
+    width: calc(25% - 10px);
+    height: calc (33.333% - 10px);
+    position: relative;
+    margin: 5px;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
+}
+#counter,
+#wrong{
+    font-family: helvetica;
+}
+button{
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.memory-card:active{
+    transform: scale(.97);
+    transition: transform .2s;
+}
+
+.memory-card.flip{
+    transform: rotateY(180deg)
+}
+.front-face,
+.back-face{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    position: absolute;
+    border: 2px solid deeppink;
+    backface-visibility: hidden;
+}
+
+.front-face{
+    transform: rotateY(180deg);
+}
+
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+  }
+  #win{
+      height: 300px;
+      width: 500px;
+      background-image: url("img/win.jpg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      border: 20px solid blue;
+      margin: auto auto;
+      margin-top: 150px;
+      box-sizing: border-box;
+      color: deeppink;
+      font: 40px;
+      font-weight: 700;
+  }
